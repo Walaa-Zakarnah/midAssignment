@@ -6,9 +6,12 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Role: Observer Interface in Observer Pattern
+ * Responsibilities: 
+ * Defines the contract (notify(String message)) for observers to implement and receive
+ * updates from the Inventory.
  */
 interface Observer {
+
     void notify(String message);
 }
-

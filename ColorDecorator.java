@@ -6,7 +6,7 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * concrete decorator.
  */
 public class ColorDecorator extends TShirtDecorator {
 
@@ -14,7 +14,7 @@ public class ColorDecorator extends TShirtDecorator {
     private String color;
 
     public ColorDecorator(TShirt tshirt, String color) {
-        super(tshirt.getDescription(), "with color");
+        super(tshirt.getDescription(), "with color", tshirt.getSize());
         this.tshirt = tshirt;
         this.color = color;
     }
@@ -23,4 +23,17 @@ public class ColorDecorator extends TShirtDecorator {
     public String getDescription() {
         return tshirt.getDescription() + ", in color: " + color;
     }
+// can be applied like this too, yet the current design makes the need for less classes and complications.
+//class BlueColorDecorator extends TShirtDecorator {
+    // private TShirt tShirt;
+//    public BlueColorDecorator(TShirt decoratedTShirt) {
+//       this.tShirt = decoratedTShirt 
+//       super(decoratedTShirt);
+//    }
+//
+//    @Override
+//    public String getDescription() {
+//        return tShirt.getDescription() + " with Blue color";
+//    }
+//}
 }

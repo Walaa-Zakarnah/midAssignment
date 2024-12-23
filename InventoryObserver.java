@@ -6,9 +6,14 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Role: Concrete Observer in Observer Pattern 
+ * Responsibilities: 
+ * 1- Implements the Observer interface
+ * 2- Represents entities ( Shop owner) interested in receiving inventory updates
+ * 3- Displays notifications when inventory changes.
  */
 public class InventoryObserver implements Observer {
+
     private String name;
 
     public InventoryObserver(String name) {

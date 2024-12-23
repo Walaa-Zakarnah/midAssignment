@@ -6,7 +6,13 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ *
+ * The RegionFactory is an abstract factory 
+ * responsible for creating TShirt
+ * objects of different types (e.g., SmallTShirt, MediumTShirt, LargeTShirt)
+ * Responsibilities:
+ * 1- Creates T-shirts specific to a region
+ * 2- Provides a way to encapsulate regional-specific creation logic for T-shirts.
  */
 public abstract class RegionFactory {
 

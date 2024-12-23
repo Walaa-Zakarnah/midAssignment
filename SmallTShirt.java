@@ -6,7 +6,10 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Abstract factory: Concrete products
+ * Decorator Pattern: Concrete component.
+ *
+ *
  */
 public class SmallTShirt extends TShirt {
 

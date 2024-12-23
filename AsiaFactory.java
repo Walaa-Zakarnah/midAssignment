@@ -6,7 +6,7 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Concrete Factory (creator) extending the abstract factory.
  */
 public class AsiaFactory extends RegionFactory{
     @Override

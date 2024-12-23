@@ -6,15 +6,16 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Abstract factory: Concrete products
+ *  * Decorator Pattern: Concrete components.
  */
 public class MediumTShirt extends TShirt {
 
-    public MediumTShirt(String name,String description) {
+    public MediumTShirt(String name, String description) {
         super(name, description, "Medium");
     }
 
-   @Override
+    @Override
     public void formSize() {
         System.out.println("this is Medium size.");
     }

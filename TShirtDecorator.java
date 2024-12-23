@@ -6,13 +6,12 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Abstract decorator.
  */
-public abstract class TShirtDecorator extends TShirt {
+public abstract class TShirtDecorator extends TShirt { // to inherit type 
     //not applying this constructor causes an error to appear.
-
-    public TShirtDecorator(String name, String description) {
-        super(name, description, "");
+    public TShirtDecorator(String name, String description, String size) {
+        super(name, description, size); // Pass the size to the parent class
     }
 
     // abstract function in TShirt Class needs to be implemented
@@ -22,5 +21,5 @@ public abstract class TShirtDecorator extends TShirt {
     }
 
     @Override
-    public abstract String getDescription();
+    public abstract String getDescription(); // To force concrete decorators apply this function.
 }

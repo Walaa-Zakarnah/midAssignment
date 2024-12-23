@@ -6,7 +6,11 @@ package com.mycompany.midtermproject;
 
 /**
  *
- * @author Zein
+ * Abstract product for the factory pattern part,
+ * Abstract Component for the
+ * decorator pattern (core component)
+ * --Responsibilities: 
+ * 1- Represents a T-shirt with basic attributes (size, description, name).
  */
 public abstract class TShirt {
 
@@ -18,7 +22,6 @@ public abstract class TShirt {
         this.name = name;
         this.description = description;
         this.size = size;
-
     }
 
     public String getDescription() {
@@ -29,6 +32,5 @@ public abstract class TShirt {
         return size;
     }
 
-    public abstract void formSize();
-
+    public abstract void formSize(); //  depends on each type; just add print statement indicating the type
 }

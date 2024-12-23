@@ -13,7 +13,7 @@ public class LogoDecorator extends TShirtDecorator {
     private TShirt tshirt;
 
     public LogoDecorator(TShirt tshirt) {
-        super(tshirt.getDescription(), "with logo");
+        super(tshirt.getDescription(), "with logo", tshirt.getSize());
         this.tshirt = tshirt;
     }
 
